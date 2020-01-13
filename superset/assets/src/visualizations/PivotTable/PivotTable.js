@@ -266,7 +266,7 @@ function PivotTable(element, props) {
     if (config.format && checkObjectOrStringHasLengthOrnot(config.format)) {
       if (originalValue !== '') {
         console.log('uepp0');
-        obj.html(formatNumber(config.format)(originalValue));
+        obj.html(formatNumber(config.format), originalValue);
         console.log('uepp2');
       }
     }
