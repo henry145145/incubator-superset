@@ -23,7 +23,6 @@ import 'datatables.net-bs/css/dataTables.bootstrap.css';
 import $ from 'jquery';
 import PropTypes from 'prop-types';
 import { formatNumber } from '@superset-ui/number-format';
-import { isEqual } from 'lodash';
 import fixTableHeight from '../../modules/utils';
 import './PivotTable.css';
 
@@ -65,8 +64,6 @@ function PivotTable(element, props) {
 
   // payload data is a string of html with a single table element
   container.innerHTML = html;
-
-  console.log(formData);
 
   const { combineMetric } = formData || {};
 
